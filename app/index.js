@@ -7,9 +7,11 @@ function rollDice(roll) {
 
 exports.handler = function(event, context) {
     var roll = event.dice;
+    var err = null;
+    var rv = null;
 
     if (roll === undefined || roll == null) {
-        context.fail("No dice specified");
+        err = ("No dice specified");
     } else {
         if (!isNaN(roll)) {
             roll = "1d" + roll;
@@ -25,6 +27,6 @@ exports.handler = function(event, context) {
             // request: event.request || "None"
         };
         //console.log('Received event:', JSON.stringify(event, null, 2));
-        context.done(null, rv);
     }
+    context.done(err, rv);
 };
