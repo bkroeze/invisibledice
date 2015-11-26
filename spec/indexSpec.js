@@ -1,6 +1,6 @@
 require('jasmine-expect');
 var aws = require('./aws_mocks');
-var index = require('../app/index.js');
+var index = require('../index.js');
 
 describe("Index Handler Tests", function() {
     var ctx;
