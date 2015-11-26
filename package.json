@@ -1,0 +1,29 @@
+{
+  "name": "InvisibleDice",
+  "version": "0.0.1",
+  "description": "Dice Server for Invisible Castle",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine-node spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "bkroeze"
+  },
+  "keywords": [
+    "dice",
+    "aws"
+  ],
+  "author": "Bruce Kroeze",
+  "license": "ISC",
+  "dependencies": {
+    "node-dice-js": "^0.1.2"
+  },
+  "devDependencies": {
+    "jasmine-node": "^1.14.5",
+    "jasmine-expect": "^2.0.0-beta2",
+    "gulp-awslambda": "^0.2.3",
+    "gulp": "^3.9.0",
+    "gulp-zip": "^3.0.2"
+  }
+}
